@@ -1,0 +1,2 @@
+# estrela
+LUA is fun!
