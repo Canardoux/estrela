@@ -88,3 +88,5 @@ lint/tmp/
 DerivedData
 *.xcframework
 *.framework
+build-Debug
+build-Release
