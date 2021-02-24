@@ -38,5 +38,11 @@
 	</array>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackTranslucent</string>
+
+	<key>CoronaDelegates</key>
+	<array>
+                <string>EstrelaFlutterEngineCoronaDelegate</string>
+	</array>
+
 </dict>
 </plist>

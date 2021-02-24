@@ -5,12 +5,13 @@
 
 application =
 {
-	content =
-	{
-		width = 320,
-		height = 480,
-		scale = "zoomEven",
-		-- scale = "letterbox",
-		-- scale = "none",
-	},
+        content =
+        {
+                width = 320,
+                height = 480,
+                scale = "zoomStretch",
+                -- scale = "zoomEven",
+                -- scale = "letterbox",
+                -- scale = "none",
+        },
 }

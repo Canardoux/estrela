@@ -3,7 +3,7 @@
 path=$(dirname "$0")
 
 OUTPUT_DIR=$1
-TARGET_NAME=plugin_library
+TARGET_NAME=estrela_flutter
 OUTPUT_SUFFIX=a
 CONFIG=Release
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -59,7 +59,12 @@
 		A4C2449C1683FA5300C395D1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C244991683FA5300C395D1 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A4E2537F166AE3DC00DCDC2C /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E2537E166AE3DC00DCDC2C /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C22C1E4B1E981D9000D74196 /* LaunchScreen.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = C22C1E4A1E981D9000D74196 /* LaunchScreen.storyboardc */; };
-		C57C0A6A25E413E5001B4227 /* libplugin_library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C52F108E25DE62FF007EA0D1 /* libplugin_library.a */; };
+		C5705E0B25E5051200D123A8 /* libestrela_flutter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C57C0A9825E42837001B4227 /* libestrela_flutter.a */; };
+		C5705E0C25E5051200D123A8 /* libestrela_flutter_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C57C0A7A25E42208001B4227 /* libestrela_flutter_engine.a */; };
+		C5705E1725E50A3F00D123A8 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57C0AAC25E4E175001B4227 /* App.xcframework */; };
+		C5705E1825E50A3F00D123A8 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C57C0AAC25E4E175001B4227 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5705E1925E50A3F00D123A8 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57C0AB025E4E179001B4227 /* Flutter.xcframework */; };
+		C5705E1A25E50A3F00D123A8 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C57C0AB025E4E179001B4227 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E640B2F21BFC00B00031FAE9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E640B2F11BFC00B00031FAE9 /* AssetsLibrary.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E640B2F41BFC00BA0031FAE9 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E640B2F31BFC00BA0031FAE9 /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F56457D91FA108F500EC8C29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56712391F73451B006B502D /* Images.xcassets */; };
@@ -69,21 +74,50 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C52F108D25DE62FF007EA0D1 /* PBXContainerItemProxy */ = {
+		C57C0A7925E42208001B4227 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C52F108925DE62FC007EA0D1 /* Plugin.xcodeproj */;
+			containerPortal = C57C0A7525E42208001B4227 /* estrela_flutter_engine.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A4E253B6166D6FB300DCDC2C;
-			remoteInfo = plugin_library;
+			remoteInfo = estrela_flutter_engine;
 		};
-		C57C0A6725E413C2001B4227 /* PBXContainerItemProxy */ = {
+		C57C0A9725E42837001B4227 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C52F108925DE62FC007EA0D1 /* Plugin.xcodeproj */;
+			containerPortal = C57C0A9325E42837001B4227 /* estrela_flutter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A4E253B6166D6FB300DCDC2C;
+			remoteInfo = estrela_flutter;
+		};
+		C5B0475525E54FF200C74E19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C57C0A9325E42837001B4227 /* estrela_flutter.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = A4E253B5166D6FB300DCDC2C;
-			remoteInfo = plugin_library;
+			remoteInfo = estrela_flutter;
+		};
+		C5B0475725E54FF200C74E19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C57C0A7525E42208001B4227 /* estrela_flutter_engine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A4E253B5166D6FB300DCDC2C;
+			remoteInfo = estrela_flutter_engine;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5705E1B25E50A3F00D123A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C5705E1A25E50A3F00D123A8 /* Flutter.xcframework in Embed Frameworks */,
+				C5705E1825E50A3F00D123A8 /* App.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A447B60E165D72FB009EA762 /* AppCoronaDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCoronaDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -130,7 +164,12 @@
 		A4E2537E166AE3DC00DCDC2C /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		C22C1E4A1E981D9000D74196 /* LaunchScreen.storyboardc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.storyboardc; name = LaunchScreen.storyboardc; path = ../Corona/LaunchScreen.storyboardc; sourceTree = "<group>"; };
 		C277D3B51EBB9F8E00966BA1 /* _CoronaSplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _CoronaSplashScreen.png; sourceTree = "<group>"; };
-		C52F108925DE62FC007EA0D1 /* Plugin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Plugin.xcodeproj; path = ../../S2D_estrela_flutter/ios/Plugin.xcodeproj; sourceTree = "<group>"; };
+		C5705E0325E504B500D123A8 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = EmbeddedFrameworks/Flutter.xcframework; sourceTree = "<group>"; };
+		C5705E0425E504B500D123A8 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = EmbeddedFrameworks/App.xcframework; sourceTree = "<group>"; };
+		C57C0A7525E42208001B4227 /* estrela_flutter_engine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = estrela_flutter_engine.xcodeproj; path = ../../S2D_estrela_flutter_engine/ios/estrela_flutter_engine.xcodeproj; sourceTree = "<group>"; };
+		C57C0A9325E42837001B4227 /* estrela_flutter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = estrela_flutter.xcodeproj; path = ../../S2D_estrela_flutter/ios/estrela_flutter.xcodeproj; sourceTree = "<group>"; };
+		C57C0AAC25E4E175001B4227 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../FLT_estrela_module/ios/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
+		C57C0AB025E4E179001B4227 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../../FLT_estrela_module/ios/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
 		E640B2F11BFC00B00031FAE9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		E640B2F31BFC00BA0031FAE9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		F54A40BD1EE07F9100AF417D /* build.settings */ = {isa = PBXFileReference; lastKnownFileType = text; name = build.settings; path = ../Corona/build.settings; sourceTree = "<group>"; };
@@ -147,11 +186,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C57C0A6A25E413E5001B4227 /* libplugin_library.a in Frameworks */,
+				C5705E0B25E5051200D123A8 /* libestrela_flutter.a in Frameworks */,
+				C5705E0C25E5051200D123A8 /* libestrela_flutter_engine.a in Frameworks */,
 				E640B2F41BFC00BA0031FAE9 /* Photos.framework in Frameworks */,
 				E640B2F21BFC00B00031FAE9 /* AssetsLibrary.framework in Frameworks */,
 				F5BB41531BC42ACF0033F6FA /* CoreText.framework in Frameworks */,
 				A46885F418068C2900381941 /* CoreVideo.framework in Frameworks */,
+				C5705E1725E50A3F00D123A8 /* App.xcframework in Frameworks */,
 				A46885F218068C2200381941 /* GLKit.framework in Frameworks */,
 				A4C2449A1683FA5300C395D1 /* Accounts.framework in Frameworks */,
 				A4C2449C1683FA5300C395D1 /* Social.framework in Frameworks */,
@@ -159,6 +200,7 @@
 				A484117815128D5D0074BD57 /* AddressBookUI.framework in Frameworks */,
 				A484117915128D5D0074BD57 /* AudioToolbox.framework in Frameworks */,
 				A484117A15128D5D0074BD57 /* AVFoundation.framework in Frameworks */,
+				C5705E1925E50A3F00D123A8 /* Flutter.xcframework in Frameworks */,
 				A484117B15128D5D0074BD57 /* CFNetwork.framework in Frameworks */,
 				A484112215114F700074BD57 /* CoreGraphics.framework in Frameworks */,
 				A484117C15128D5D0074BD57 /* CoreLocation.framework in Frameworks */,
@@ -211,7 +253,8 @@
 		A484110E15114F700074BD57 = {
 			isa = PBXGroup;
 			children = (
-				C52F108925DE62FC007EA0D1 /* Plugin.xcodeproj */,
+				C57C0A9325E42837001B4227 /* estrela_flutter.xcodeproj */,
+				C57C0A7525E42208001B4227 /* estrela_flutter_engine.xcodeproj */,
 				A484112715114F700074BD57 /* App */,
 				A447B823166856C7009EA762 /* Corona */,
 				A447B66F16670015009EA762 /* CoronaNative */,
@@ -231,6 +274,10 @@
 		A484111C15114F700074BD57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5705E0425E504B500D123A8 /* App.xcframework */,
+				C57C0AB025E4E179001B4227 /* Flutter.xcframework */,
+				C57C0AAC25E4E175001B4227 /* App.xcframework */,
+				C5705E0325E504B500D123A8 /* Flutter.xcframework */,
 				E640B2F31BFC00BA0031FAE9 /* Photos.framework */,
 				E640B2F11BFC00B00031FAE9 /* AssetsLibrary.framework */,
 				F5E548081BE7FF0200091810 /* GameController.framework */,
@@ -297,10 +344,18 @@
 			path = "$HOME/Library/Application Support/Corona/Native";
 			sourceTree = "<absolute>";
 		};
-		C52F108A25DE62FC007EA0D1 /* Products */ = {
+		C57C0A7625E42208001B4227 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C52F108E25DE62FF007EA0D1 /* libplugin_library.a */,
+				C57C0A7A25E42208001B4227 /* libestrela_flutter_engine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C57C0A9425E42837001B4227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C57C0A9825E42837001B4227 /* libestrela_flutter.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,11 +373,13 @@
 				A484111615114F700074BD57 /* Frameworks */,
 				A4841162151268030074BD57 /* Compile Corona Project */,
 				A484118B15128E320074BD57 /* build.settings to Info.plist */,
+				C5705E1B25E50A3F00D123A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C57C0A6825E413C2001B4227 /* PBXTargetDependency */,
+				C5B0475625E54FF200C74E19 /* PBXTargetDependency */,
+				C5B0475825E54FF200C74E19 /* PBXTargetDependency */,
 			);
 			name = App;
 			productName = App;
@@ -360,8 +417,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C52F108A25DE62FC007EA0D1 /* Products */;
-					ProjectRef = C52F108925DE62FC007EA0D1 /* Plugin.xcodeproj */;
+					ProductGroup = C57C0A9425E42837001B4227 /* Products */;
+					ProjectRef = C57C0A9325E42837001B4227 /* estrela_flutter.xcodeproj */;
+				},
+				{
+					ProductGroup = C57C0A7625E42208001B4227 /* Products */;
+					ProjectRef = C57C0A7525E42208001B4227 /* estrela_flutter_engine.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -373,11 +434,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C52F108E25DE62FF007EA0D1 /* libplugin_library.a */ = {
+		C57C0A7A25E42208001B4227 /* libestrela_flutter_engine.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libplugin_library.a;
-			remoteRef = C52F108D25DE62FF007EA0D1 /* PBXContainerItemProxy */;
+			path = libestrela_flutter_engine.a;
+			remoteRef = C57C0A7925E42208001B4227 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C57C0A9825E42837001B4227 /* libestrela_flutter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libestrela_flutter.a;
+			remoteRef = C57C0A9725E42837001B4227 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -477,10 +545,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C57C0A6825E413C2001B4227 /* PBXTargetDependency */ = {
+		C5B0475625E54FF200C74E19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = plugin_library;
-			targetProxy = C57C0A6725E413C2001B4227 /* PBXContainerItemProxy */;
+			name = estrela_flutter;
+			targetProxy = C5B0475525E54FF200C74E19 /* PBXContainerItemProxy */;
+		};
+		C5B0475825E54FF200C74E19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = estrela_flutter_engine;
+			targetProxy = C5B0475725E54FF200C74E19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -585,11 +658,21 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = VC3TGXH668;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(CORONA_ROOT)/Corona/ios/lib\"",
+					"\"$(PROJECT_DIR)/EmbeddedFrameworks\"",
+					"$(PROJECT_DIR)/../../FLT_estrela_module/ios/$(CONFIGURATION)/",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "App-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.canardoux.estrela-solar2D";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -608,11 +691,21 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = VC3TGXH668;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(CORONA_ROOT)/Corona/ios/lib\"",
+					"\"$(PROJECT_DIR)/EmbeddedFrameworks\"",
+					"$(PROJECT_DIR)/../../FLT_estrela_module/ios/$(CONFIGURATION)/",
+				);
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "App-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.canardoux.estrela-solar2D";
 				PRODUCT_NAME = "$(TARGET_NAME)";
